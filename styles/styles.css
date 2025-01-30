@@ -1,0 +1,229 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.main-container {
+    display: flex;
+    flex-direction: column; /* Organiza los hijos en columnas */
+    align-items: center; /* Centra horizontalmente todos los elementos */
+    justify-content: center; /* Opcional: centra verticalmente en la página */
+    margin: 0 auto; /* Centra el contenedor principal en la página */
+    width: 100%; /* Asegura que ocupe el ancho completo */
+    max-width: 600px; /* Limita el ancho máximo */
+    padding: 20px;
+}
+
+/* Contenedor de créditos ganados */
+.win-announcement {
+    font-size: 2em; /* Tamaño de letra grande */
+    font-weight: bold; /* Negrita */
+    color: green; /* Color del texto */
+    text-align: center; /* Centrado del texto */
+    margin-bottom: 20px; /* Espacio entre este contenedor y el juego */
+}
+
+/* Contenedor del juego */
+.game-container {
+    width: 100%; /* Asegura que ocupe todo el ancho dentro del contenedor principal */
+    text-align: center; /* Centra el contenido del juego */
+}
+
+/* Elementos individuales */
+.slot-machine {
+    display: flex;
+    justify-content: center; /* Centra los slots horizontalmente */
+    margin: 10px 0; /* Espaciado entre los elementos */
+}
+
+.slot {
+    font-size: 2em; /* Tamaño de los iconos */
+    margin: 0 10px; /* Espaciado entre los slots */
+}
+
+.play-button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.credits {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+
+
+/* Contenedor de error */
+#error-message {
+    color: red; /* Color del texto del error */
+    font-size: 14px; /* Tamaño del texto */
+    text-align: center; /* Centrar el texto */
+    margin-top: 10px; /* Espaciado desde el contenedor de login */
+    padding: 10px; /* Relleno dentro del contenedor */
+    border: 1px solid red; /* Borde del contenedor */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #ffe5e5; /* Fondo claro para destacar el error */
+    display: none; /* Oculto por defecto */
+    width: 300px; /* Ancho del contenedor */
+    margin-left: auto; /* Centrar horizontalmente */
+    margin-right: auto;
+}
+
+/* Login container */
+.login-container {
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+/* Title */
+.login-container h1 {
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+/* Form groups */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Button styles */
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Error message */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Responsive design */
+@media (max-width: 400px) {
+    .login-container {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 40px; /* Espaciado interno más grande */
+    border-radius: 20px; /* Bordes más redondeados */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    width: 600px; /* Más ancho */
+    text-align: center;
+}
+
+/* Créditos */
+.credits {
+    font-size: 28px; /* Texto más grande */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px; /* Más espacio debajo */
+}
+
+/* Máquina tragaperras */
+.slot-machine {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 20px; /* Espaciado interno más grande */
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px; /* Tamaño máximo más grande */
+    height: 150px; /* Mayor altura */
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra interna más destacada */
+    margin-bottom: 30px; /* Más espacio debajo */
+}
+
+/* Cada slot (cuadro de la máquina) */
+.slot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 3px solid #cccccc; /* Borde más grueso */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 120px; /* Más ancho */
+    height: 120px; /* Más alto */
+    font-size: 48px; /* Frutas más grandes */
+    font-weight: bold;
+    color: #555;
+}
+
+/* Botón para jugar */
+.play-button {
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 20px; /* Texto más grande */
+    font-weight: bold;
+    padding: 15px 30px; /* Botón más grande */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.play-button:hover {
+    background-color: #0056b3;
+}
+
